@@ -56,5 +56,6 @@ function updatePositionShareBox(){
         shareBox.style.top = `${shareBtn.getBoundingClientRect().top - shareBox.getBoundingClientRect().height - 20}px`
         shareBox.style.left = `${shareBtn.getBoundingClientRect().left - shareBox.getBoundingClientRect().width /2}px`
     }
-
 }
+
+window.addEventListener("resize",()=>{location.reload(); return;});
