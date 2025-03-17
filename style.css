@@ -1,0 +1,204 @@
+/* General Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;;
+}
+
+a{
+    
+}
+
+/* Varibale decalertaions */
+:root{
+    /* Colors */
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    gap: 5vh;
+    height: 100vh;
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    min-height: fit-content;
+    flex-direction: column;
+    max-width: max(80vw, 300px);
+    /* overflow: hidden; */
+}
+
+.furniture{
+    overflow: hidden;
+    height: 80%;
+    border-radius: 10px 10px 0 0;
+}
+
+.furniture img {
+    width: 100%;
+    height: auto;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 300px;
+    gap: 1rem;
+    height: 100%;
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.description .home-text{
+    color:var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.description .design-text{
+    color: var(--Desaturated-Dark-Blue);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    justify-content: space-between;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+.person .profile{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+}
+.person .person-info {
+    display: flex;
+    flex-direction: column;
+}
+#person-name{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+#date {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 0.7rem;
+
+}
+.person button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Light-Grayish-Blue);
+    margin-left: auto;
+    z-index: 1000;
+}
+.person img{
+    width: 15px;
+    height: 15px;
+}
+
+.share-options{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-direction: row;
+    border-radius: 0 0 10px 10px;
+    width: max(80vw, 300px);
+    font-weight: 200;
+    padding: 0.2rem 0.2rem;
+    letter-spacing: 4px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: var(--Light-Grayish-Blue);
+}
+
+.share-options #share-text{
+    margin-left: 2rem;
+}
+.share-options img{
+    width: 15px;
+    height: 15px;
+}
+
+.share-options img:hover {
+    cursor: pointer;
+}
+
+.attribution{
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width:700px) {
+    body{
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+        margin-top: 5vh;
+    }
+    .main-content{
+        flex-direction: row;
+        width: max(60vw, 400px);
+        max-height: 300px;
+    }
+    .furniture{
+        border-radius: 10px 0 0 10px;
+        width: clamp(400px,50vw,600px);
+        overflow: hidden;
+        height: 100%;
+    }
+    .furniture img {
+        width: auto;
+        height: 100%;
+        min-height: 300px;
+    }
+    .description{
+        max-height: 300px;
+    }
+    .person button {
+        z-index: none;
+    }
+    .share-options{
+        position: absolute;
+        justify-content: flex-start;
+        z-index: 1;
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: 200px;
+    }
+    .share-options #share-text{
+        margin: 0;
+    }
+    .share-options::after{
+        content: '';
+        position: relative;
+        z-index: -1;
+        padding: 10px;
+        transform:translateY(20px) translateX(-85px) rotate(45deg);
+        background-color: var(--Very-Dark-Grayish-Blue);  
+    }
+}

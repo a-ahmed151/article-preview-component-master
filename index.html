@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- StyleSheet Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- GoogleFont link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+<body>
+  <div class="main-content">
+    <div class="furniture">
+      <img src="images/drawers.jpg" alt="A green drawer with a vase on top and two white frames">
+    </div>
+    <div class="description">
+      <div class="home-text">
+        <p>
+          Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+        </p>
+      </div>
+      <div class="design-text">
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+        </p>
+      </div>
+      <div class="person">
+        <img class ="profile" src="./images/avatar-michelle.jpg" alt="profile picture of Michelle">
+        <div class="person-info">
+          <span id="person-name">Michelle Appleton</span>
+          <span id="date">28 Jun 2020</span>
+        </div>
+        <button id="share-btn" type="button"><img src="./images/icon-share.svg" alt="share button icon"></button>
+      </div>
+    </div>
+    <div id="share-options" class="share-options hidden" >
+      <span id="share-text">SHARE</span>
+      <a  aria-label="share to facebook"><img id="facebook" class="share-icon" src="./images/icon-facebook.svg" alt="facebook icon share option"></a>
+      <a  aria-label="share to twitter"><img id="twitter" class="share-icon" src="./images/icon-twitter.svg" alt="twitter icon share option"></a>
+      <a  aria-label="share to pinterest"><img id="pinterest" class="share-icon" src="./images/icon-pinterest.svg" alt="pinterest icon share option"></a>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/a-ahmed151">Abdelrahman Ahmed</a>.
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
